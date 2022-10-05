@@ -10,7 +10,8 @@ import org.springframework.stereotype.Service;
 
 import com.cts.eaution.dao.ProductIdAndName;
 import com.cts.eaution.dao.ProductSearchDao;
-import com.cts.eaution.entities.Category;
+
+import com.cts.eaution.vo.Category;
 import com.cts.eaution.entities.ProductDocument;
 import com.cts.eaution.service.BidSearchService;
 import com.cts.eaution.service.ProductSearchService;

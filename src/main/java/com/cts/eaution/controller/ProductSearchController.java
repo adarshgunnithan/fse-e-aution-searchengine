@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.eaution.dao.ProductIdAndName;
-import com.cts.eaution.entities.Category;
+
+import com.cts.eaution.vo.Category;
 import com.cts.eaution.service.ProductSearchService;
 import com.cts.eaution.vo.ProductVO;
 

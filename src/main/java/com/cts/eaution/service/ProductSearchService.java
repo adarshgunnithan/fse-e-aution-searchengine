@@ -3,7 +3,8 @@ package com.cts.eaution.service;
 import java.util.List;
 
 import com.cts.eaution.dao.ProductIdAndName;
-import com.cts.eaution.entities.Category;
+
+import com.cts.eaution.vo.Category;
 import com.cts.eaution.vo.ProductVO;
 
 /**
@@ -19,7 +20,7 @@ public interface ProductSearchService {
 	public List<ProductVO> getProductByName(String productName);
 	
 	/**
-	 * To get all product names
+	 * To get all product namesxx
 	 * @return List<ProductIdAndName> 
 	 */
 	public List<ProductIdAndName> getAllProductNames();
