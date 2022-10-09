@@ -46,12 +46,15 @@ public class ProductSearchServiceImpl  implements ProductSearchService{
 
 	@Override
 	public ProductVO getProductById(Long productId) {
+		ProductVO productVO = null;
 		// TODO Auto-generated method stub
 		Optional<ProductDocument> productDocument=productSearchDao.findById(productId);
+		if(productDocument.isPresent()) {
 		List<BidVO>bids=bidSearchServiceImpl.getAllBids(productId);
-		ProductVO productVO = new ProductVO();
+		 productVO = new ProductVO();
 		BeanUtils.copyProperties( productDocument.get(),productVO);
 		productVO.setBids(bids);
+		}
 		return productVO;
 	}
 
